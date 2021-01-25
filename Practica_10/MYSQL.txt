@@ -1,0 +1,10 @@
+CREAR TABLA
+
+use demo;
+CREATE TABLE `employee` (
+	`ID` int(10) NOT NULL,
+    `NAME` varchar(255) DEFAULT NULL,
+    `DEPT` varchar(255) DEFAULT NULL,
+    `ADE` int(10) DEFAULT NULL,
+    PRIMARY KEY (`ID`)
+) ENGINE= InnoDB DEFAULT CHARSET=latin1;

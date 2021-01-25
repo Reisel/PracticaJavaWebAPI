@@ -1,0 +1,4 @@
+com\eduit\client\ApiMercadoLibre.class
+com\eduit\entities\Categoria.class
+com\eduit\servlets\PersonaServlet.class
+com\eduit\servlets\CategoriasMercadoLibreServlet.class

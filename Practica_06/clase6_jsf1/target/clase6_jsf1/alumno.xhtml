@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Complete el formulario
+        <h:form>
+            Nombre:   <h:inputText value="#{alumnoManagedBean.alumno.nombre}"></h:inputText><br/>
+            Apellido: <h:inputText value="#{alumnoManagedBean.alumno.apellido}"></h:inputText><br/>
+            Email:    <h:inputText value="#{alumnoManagedBean.alumno.correo}"></h:inputText><br/>
+            Clave:    <h:inputText value="#{alumnoManagedBean.alumno.password}"></h:inputText><br/>
+            NroAlumno:<h:inputText value="#{alumnoManagedBean.alumno.nroAlumno}"></h:inputText><br/>
+            Provincia <h:selectOneMenu value="#{alumnoManagedBean.idProvincia}">
+                <f:selectItems value="#{alumnoManagedBean.provincias}" var="prov" itemValue="#{prov.idProvincia}" itemLabel="#{prov.descripcion}" />
+             </h:selectOneMenu>
+            <br></br>
+            <h:commandButton value="Bienvenido" action="#{alumnoManagedBean.registrar()}" ></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+

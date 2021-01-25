@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1140519164.index
+\ejemplo1\src\main\java
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1838619376.index
+\clase1_ej1\src\main\java
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2572189110.index
+\clase1_ej1\src\main\java
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2416387506.index
+\clase6_jsf1\src\main\java
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\274770808.index
+\ejemplo2\src\main\java
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3794241639.index
+\clase5_1\target\generated-sources\annotations
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\JAVA\09 Java Web API\01 Clase\04 Ejer Clase Prof\Ejemplo1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2082743058.index
+\clase5_ejemplo2\src\main\java

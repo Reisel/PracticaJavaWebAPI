@@ -1,0 +1,6 @@
+com\eduit\base\AdministradorDeConexiones.class
+com\eduit\beans\ProvinciaDao.class
+com\eduit\beans\Alumno.class
+com\eduit\beans\AlumnoManagedBean.class
+com\eduit\beans\HolaBean.class
+com\eduit\beans\Provincia.class

@@ -1,0 +1,3 @@
+com\educacionit\client\UsuarioFacebook.class
+com\educacionit\entities\Usuario.class
+com\educacionit\servlets\LoginServlet.class

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Ejemplo DataTable</h1>
+        <h:form>
+            
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Nombre" for="nombre" />
+                <h:inputText value="#{personaBean.miPersona.nombre}" id="nombre" style="width:150px;" />               
+                <h:outputLabel value="Apellido" for="apellido" />
+                <h:inputText value="#{personaBean.miPersona.apellido}" id="apellido" style="width:150px;" />
+                <h:outputLabel value="Edad" for="edad" />
+                <h:inputText value="#{personaBean.miPersona.edad}" id="edad" style="width:150px;" label="Edad">
+                    <f:validateLength maximum="3" minimum="1"/>
+                </h:inputText>
+                <h:outputLabel value="Profesion" for="profesion" />
+                <h:inputText value="#{personaBean.miPersona.profesion}" id="profesion" style="width:150px;" />
+                <h:outputLabel value="Salario" for="salario" />
+                <h:inputText value="#{personaBean.miPersona.remuneracion}" id="salario" style="width:150px;" />                    
+                <h:outputLabel value="Sexo" for="sexo" />
+                <h:selectOneMenu value="#{personaBean.miPersona.sexo}" id="sexo" style="width:150px;">
+                    <f:selectItem itemValue="M" itemLabel="Masculino" />
+                    <f:selectItem itemValue="F" itemLabel="Femenino" />
+                </h:selectOneMenu>
+            </h:panelGrid>
+            <br></br>
+            <br></br>
+            <h:commandButton value="Registrar" action="#{personaBean.agregarPersona()}" style="width:240px;" />
+            <br></br>
+            <br></br>
+            <h:dataTable value="#{personaBean.listPersonas}" var="datos" border="4" style="width:400px;"
+                         rendered="#{personaBean.listPersonas.size()>0}" >
+                
+                <h:column>
+                    <f:facet name="header">Nombre</f:facet>
+                    <h:inputText value="#{datos.nombre}" rendered="#{datos.editar}" />
+                    <h:outputText value="#{datos.nombre}" rendered="#{not datos.editar}" />
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Apellido</f:facet>
+                    <h:inputText value="#{datos.apellido}" rendered="#{datos.editar}" />
+                    <h:outputText value="#{datos.apellido}" rendered="#{not datos.editar}" />                    
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Edad</f:facet>
+                    <h:inputText value="#{datos.edad}" rendered="#{datos.editar}" />
+                    <h:outputText value="#{datos.edad}" rendered="#{not datos.editar}" />                    
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Profesion</f:facet>
+                    <h:inputText value="#{datos.profesion}" rendered="#{datos.editar}" />
+                    <h:outputText value="#{datos.profesion}" rendered="#{not datos.editar}" />                     
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Salario</f:facet>
+                    <h:inputText value="#{datos.remuneracion}" rendered="#{datos.editar}" />
+                    <h:outputText value="#{datos.remuneracion}" rendered="#{not datos.editar}" />                     
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Sexo</f:facet>
+                    <h:selectOneMenu value="#{datos.sexo}" style="width:150px;" rendered="#{datos.editar}">
+                        <f:selectItem itemValue="M" itemLabel="Masculino" />
+                        <f:selectItem itemValue="F" itemLabel="Femenino" />
+                    </h:selectOneMenu>
+                    <h:outputText value="#{datos.sexo}" rendered="#{not datos.editar}" />  
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputLabel value ="Acciones" />
+                    </f:facet>
+                    <h:commandLink action="#{personaBean.editarPersona(datos)}" value="Editar" rendered="#{not datos.editar}"/><br></br>
+                    <h:commandLink action="#{personaBean.guardarPersona()}" value="Guardar" rendered="#{datos.editar}"/><br></br>
+                    <h:commandLink action="#{personaBean.eliminarPersona(datos)}" value="Eliminar" />
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,4 @@
+com\error\NombreInexistenteException.class
+com\model\Cotizacion.class
+com\error\DetalleError.class
+com\invertir\ConsultaSoap.class
